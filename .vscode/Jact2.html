@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Activity-2</title>
+
+  <style>
+    body {
+      margin: 0;
+      background: url('photos/yggdrasil.gif') no-repeat center center fixed;
+      background-size: 100% 100%;
+      font-family: "Times New Roman", serif;
+      color: white;
+      text-align: center;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .table-container {
+      background: rgba(0, 0, 0, 0.8);
+      border-radius: 15px;
+      padding: 30px;
+      box-shadow: 0 0 30px rgba(255, 255, 255, 0.2);
+    }
+
+    table.main {
+      border-collapse: separate;
+      border-spacing: 10px;
+      width: 1000px;
+      height: 100%;
+      table-layout: fixed;
+    }
+
+    table.main td {
+      border: 3px solid yellow;
+      padding: 0;
+      margin: 0;
+      vertical-align: middle;
+      text-align: center;
+      background: transparent;
+      box-sizing: border-box;
+      overflow: hidden;
+    }
+
+    table.main td img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+      cursor: pointer; 
+    }
+
+    td.fill-cell { height: 100%; }
+
+    h1 { margin: 0; padding: 10px; }
+
+    .nested-fit {
+      width: 100%;
+      height: 100%;
+      table-layout: fixed;
+      border-collapse: separate;
+      border-spacing: 5px;
+    }
+
+    .nested-fit td {
+      border: none;
+      padding: 0;
+      margin: 0;
+      width: 50%;  
+      height: 50%; 
+    }
+
+    .nested-fit img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+      cursor: pointer;
+    }
+
+    td.no-border {
+      border: none !important;
+      padding: 0;
+      margin: 0;
+      height: 100%;
+    }
+
+    .nested-2x3 {
+      width: 70%;
+      height: 70%;
+      margin: auto;
+      border: none
+      border-spacing: 5px;
+      table-layout: fixed;
+    }
+
+    .nested-2x3 td {
+      border: none !important;
+      padding: 0;
+      margin: 0;
+      width: 100%;
+    }
+
+    .nested-2x3 img {
+      width: 100%;
+      height: 70%;
+      object-fit: cover;
+      display: block;
+      cursor: pointer;
+    }
+
+    .home-btn {
+      margin-bottom: 20px;
+      padding: 10px 20px;
+      font-size: 18px;
+      border-radius: 10px;
+      border: none;
+      background-color: green;
+      color: white;
+      cursor: pointer;
+    }
+
+    .home-btn:hover {
+      background-color: darkgreen;
+    }
+  </style>
+</head>
+<body>
+  <button class="home-btn" onclick="window.location.href='index.html'">Go to Home</button>
+
+  <div class="table-container">
+    <table class="main" align="center">
+      <tr>
+        <td colspan="4"><h1>The God of Mischief’s Marvelous Appearances</h1></td>
+      </tr>
+
+      <tr>
+        <td><a href="https://www.google.com/search?q=Thor+2011+movie" target="_blank"><img src="photos/poster2.webp" alt="Thor 2011 movie poster"></a></td>
+        <td class="fill-cell"><a href="https://www.google.com/search?q=The+Avengers+2012+movie" target="_blank"><img src="photos/poster3.webp" alt="The Avengers 2012 movie poster"></a></td>
+        <td><a href="https://www.google.com/search?q=Avengers+Infinity+War+2018+movie" target="_blank"><img src="photos/poster4.webp" alt="Avengers Infinity War 2018 movie poster"></a></td>
+        <td><a href="https://www.google.com/search?q=Thor+The+Dark+World+2013+movie" target="_blank"><img src="photos/poster5.jpg" alt="Thor: The Dark World 2013 movie poster"></a></td>
+      </tr>
+
+      <tr>
+        <td><a href="https://www.google.com/search?q=Thor+Ragnarok+2017+movie" target="_blank"><img src="photos/poster6.jpg" alt="Thor Ragnarok 2017 movie poster"></a></td>
+        <td class="fill-cell"><a href="https://www.google.com/search?q=Loki+2021+series" target="_blank"><img src="photos/series.webp" alt="Loki 2021 series poster"></a></td>
+        <td rowspan="2" colspan="2"><a href="https://www.google.com/search?q=Loki" target="_blank"><img src="photos/giphy.gif" alt="What If...? 2021 series poster"></a></td>
+      </tr>
+
+      <tr>
+        <td class="no-border">
+          <table class="nested-fit">
+            <tr>
+              <td>
+                <table class="nested-2x3">
+                  <tr>
+                    <td><a href="https://www.google.com/search?q=Avengers+Endgame+2019+movie" target="_blank"><img src="photos/poster7.jpg" alt="Avengers endgame 2019 movie poster"></a></td>
+                    <td><a href="https://www.google.com/search?q=Thor+2011+movie" target="_blank"><img src="photos/poster2.webp" alt="Thor 2011 movie poster"></a></td>
+                  </tr>
+                  <tr>
+                    <td><a href="https://www.google.com/search?q=The+Avengers+2012+movie" target="_blank"><img src="photos/poster3.webp" alt="The Avengers 2012 movie poster"></a></td>
+                    <td><a href="https://www.google.com/search?q=Avengers+Infinity+War+2018+movie" target="_blank"><img src="photos/poster4.webp" alt="Avengers Infinity War 2018 movie poster"></a></td>
+                  </tr>
+                  <tr>
+                    <td><a href="https://www.google.com/search?q=Thor+The+Dark+World+2013+movie" target="_blank"><img src="photos/poster5.jpg" alt="Thor: The Dark World 2013 movie poster"></a></td>
+                    <td><a href="https://www.google.com/search?q=Thor+Ragnarok+2017+movie" target="_blank"><img src="photos/poster6.jpg" alt="Thor Ragnarok 2017 movie poster"></a></td>
+                  </tr>
+                </table>
+              </td>
+              <td><a href="https://www.google.com/search?q=Thor+2011+movie" target="_blank"><img src="photos/poster2.webp" alt="Thor 2011 movie poster"></a></td>
+            </tr>
+            <tr>
+              <td><a href="https://www.google.com/search?q=The+Avengers+2012+movie" target="_blank"><img src="photos/poster3.webp" alt="The Avengers 2012 movie poster"></a></td>
+              <td><a href="https://www.google.com/search?q=Avengers+Infinity+War+2018+movie" target="_blank"><img src="photos/poster4.webp" alt="Avengers Infinity War 2018 movie poster"></a></td>
+            </tr>
+          </table>
+        </td>
+        <td class="no-border">
+          <table class="nested-fit">
+            <tr>
+              <td><a href="https://www.google.com/search?q=Avengers+Endgame+2019+movie" target="_blank"><img src="photos/poster7.jpg" alt="Avengers endgame 2019 movie poster"></a></td>
+              <td><a href="https://www.google.com/search?q=Thor+Ragnarok+2017+movie" target="_blank"><img src="photos/poster6.jpg" alt="Thor Ragnarok 2017 movie poster"></a></td>
+            </tr>
+            <tr>
+              <td><a href="https://www.google.com/search?q=Thor+2011+movie" target="_blank"><img src="photos/poster2.webp" alt="Thor 2011 movie poster"></a></td>
+              <td><a href="https://www.google.com/search?q=The+Avengers+2012+movie" target="_blank"><img src="photos/poster3.webp" alt="The Avengers 2012 movie poster"></a></td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </div>
+</body>
+</html>
